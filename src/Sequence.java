@@ -54,7 +54,7 @@ public class Sequence {
 				m[i][i+1]=(isValidPair(i,i+1)?1:0);
 			}
 		}
-		for(int end=1;end<m.length-1;end++){
+		for(int end=1;end<m.length;end++){
 			for(int start =end-1;start>-1;start--){
 				int max = 0;
 				if(isValidPair(start,end)){
