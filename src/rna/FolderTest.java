@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 
 public class FolderTest extends TestCase {
 	public void testFolding(){
-		Sequence s = new Sequence("GGGCCCC");
+		SequenceOld s = new SequenceOld("GGGCCCC");
 		assertTrue(s.getMaxPairings()==3);
 		assertTrue(s.getFoldedStruct().equals("(((.)))"));
 		s.setBasepairs("AUGC");
